@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:weightSum="10"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:weightSum="6"
+        android:layout_weight="3">
+        <TextView
+            android:id="@+id/name_air2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="name"/>
+        <TextView
+            android:id="@+id/timestart_air2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="time"/>
+        <TextView
+            android:id="@+id/timeback_air2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="time"/>
+        <TextView
+            android:id="@+id/form_air2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="form"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/ic_baseline_repeat_one_24" />
+        <TextView
+            android:id="@+id/to_air2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="to"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_weight="7">
+        <TextView
+            android:id="@+id/vnd_air2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:text="300 000" />
+        <Button
+            android:id="@+id/btn_air2"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/custom_button1"
+            android:text="Chi tiết"/>
+    </LinearLayout>
+</LinearLayout>

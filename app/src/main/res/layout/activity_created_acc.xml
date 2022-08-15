@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CreatedAccActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký "
+        android:textColor="#FF3D00"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+    <LinearLayout
+        android:layout_width="360dp"
+        android:background="@drawable/custom_frame"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/editTextFullName"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Họ và Tên"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <EditText
+            android:id="@+id/editTextDateOfBirth"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Ngày sinh"
+            android:inputType="date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFullName"
+            app:layout_constraintVertical_bias="0.03" />
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDateOfBirth"
+            app:layout_constraintVertical_bias="0.03">
+
+            <RadioButton
+                android:id="@+id/checkBoy"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:text="    Nam" />
+
+            <RadioButton
+                android:id="@+id/checkGirl"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:text="    Nữ" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextCMND"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Số CMND / thẻ căn cước"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSex"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:maxLength="10"
+            android:ems="10"
+            android:hint="Số điện thoại"
+            android:inputType="number|phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextClass"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="email"
+            android:inputType="text|textEmailSubject"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <EditText
+            android:id="@+id/editTextPasswordAgain"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Địa chỉ"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPasswordAgain"
+            app:layout_constraintVertical_bias="0.682" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonCreated"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:text="Đăng ký"
+        android:background="@drawable/btn_y"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+</LinearLayout>

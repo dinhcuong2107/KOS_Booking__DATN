@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "145269425816",
+    "project_id": "kos-booking",
+    "storage_bucket": "kos-booking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145269425816:android:2b79c825f62e2dc457b2ed",
+        "android_client_info": {
+          "package_name": "com.example.kosbooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145269425816-f4mh6rmnuk9l7eaokftvl1k61par9sb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kosbooking",
+            "certificate_hash": "e40cbf122f5c8db4883d7fa56703b3b6121c692e"
+          }
+        },
+        {
+          "client_id": "145269425816-53a1iem7rbfk06m90th85rdmqmbidv8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBMKw4ElxGazWF_pWuP1BeR_lXXWkXQLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145269425816-53a1iem7rbfk06m90th85rdmqmbidv8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

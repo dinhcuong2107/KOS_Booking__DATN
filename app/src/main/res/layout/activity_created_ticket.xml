@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatedTicketActivity">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:hint="Hãng hàng không"
+        app:layout_constraintBottom_toBottomOf="@+id/buttoncreatticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:hint="Mã chuyến bay"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edtID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtID"
+        app:layout_constraintVertical_bias="0.065">
+
+        <RadioButton
+            android:id="@+id/radioButton1D"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1 chiều" />
+
+        <RadioButton
+            android:id="@+id/radioButton2D"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Khứ hồi" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Từ"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Đến"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnTo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/textViewNgayDi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Ngày bay" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnTimeNgayDi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <Button
+                android:id="@+id/btnNgayDi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/textViewNgayVe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Ngày bay trở lại" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnTimeNgayVe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <Button
+                android:id="@+id/btnNgayVe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttoncreatticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.205">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttoncreat"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNgayVe"
+            app:layout_constraintVertical_bias="0.054"
+            tools:layout_editor_absoluteX="-16dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Số ghế phổ thông"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btng1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:text="-"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="197dp"
+                tools:layout_editor_absoluteY="307dp"></Button>
+
+            <TextView
+                android:id="@+id/textViewi1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="307dp" />
+
+            <Button
+                android:id="@+id/btnt1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:text="+"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="317dp"
+                tools:layout_editor_absoluteY="307dp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="70dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <EditText
+                android:id="@+id/priceHpt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="7"
+                android:background="#0003DAC5"
+                android:gravity="right"
+                android:inputType="number"
+                android:text="VND"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            tools:layout_editor_absoluteY="350dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Số ghế thương gia"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btng2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:text="-"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="197dp"
+                tools:layout_editor_absoluteY="307dp"></Button>
+
+            <TextView
+                android:id="@+id/textViewi2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="307dp" />
+
+            <Button
+                android:id="@+id/btnt2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:text="+"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="317dp"
+                tools:layout_editor_absoluteY="307dp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="70dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <EditText
+                android:id="@+id/priceHtg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="7"
+                android:background="#0003DAC5"
+                android:gravity="right"
+                android:inputType="number"
+                android:text="VND"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            tools:layout_editor_absoluteY="350dp">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Số ghế hạng nhất"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btng3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:text="-"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="197dp"
+                tools:layout_editor_absoluteY="307dp"></Button>
+
+            <TextView
+                android:id="@+id/textViewi3"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="307dp" />
+
+            <Button
+                android:id="@+id/btnt3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:text="+"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="317dp"
+                tools:layout_editor_absoluteY="307dp"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="70dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <EditText
+                android:id="@+id/priceH1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="7"
+                android:background="#0003DAC5"
+                android:gravity="right"
+                android:inputType="number"
+                android:text="VND"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttoncreatticket"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Thêm"
+        android:background="@drawable/btn_y"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.961" />
+</androidx.constraintlayout.widget.ConstraintLayout>

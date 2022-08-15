@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".oderActivity.OrderAir1Activity">
+
+    <TextView
+        android:id="@+id/textViewNameAir"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#BA00FF"
+        android:textSize="20dp"
+        android:text="Hãng hàng không"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textViewIDAir"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Mã chuyến bay"
+        app:layout_constraintStart_toStartOf="@+id/textViewNameAir"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameAir"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewTypeAir"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="Type"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIDAir"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNameAir"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTypeAir">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#191919"
+            android:text="Form" />
+
+        <TextView
+            android:id="@+id/textViewFormAir"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#001AFF"
+            android:gravity="center"
+            android:text="Form" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#000000"
+            android:text="To" />
+
+        <TextView
+            android:id="@+id/textViewToAir"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="#001AFF"
+            android:text="To" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Khời hành" />
+
+        <TextView
+            android:id="@+id/textViewTimeSAir"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#FF00DD"
+            android:gravity="center"
+            android:text="Form" />
+
+        <TextView
+            android:id="@+id/an_t1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Khứ hồi" />
+
+        <TextView
+            android:id="@+id/textViewTimeBAir"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="#FF00DD"
+            android:text="Form" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOrderTicket"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+            android:id="@+id/layoutpt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="#32DA03"
+                    android:text="Số vé phổ thông"/>
+                <TextView
+                    android:id="@+id/t_price_air_pt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="giá pt"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnslg1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="197dp"
+                    tools:layout_editor_absoluteY="307dp"></Button>
+
+                <TextView
+                    android:id="@+id/textViewsl1"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="25dp"
+                    tools:layout_editor_absoluteX="237dp"
+                    tools:layout_editor_absoluteY="307dp" />
+
+                <Button
+                    android:id="@+id/btnslt1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="317dp"
+                    tools:layout_editor_absoluteY="307dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layouttg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="#FFC800"
+                    android:text="Số vé thương gia"/>
+                <TextView
+                    android:id="@+id/t_price_air_tg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="giá tg"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnslg2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="197dp"
+                    tools:layout_editor_absoluteY="307dp"></Button>
+
+                <TextView
+                    android:id="@+id/textViewsl2"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="25dp"
+                    tools:layout_editor_absoluteX="237dp"
+                    tools:layout_editor_absoluteY="307dp" />
+
+                <Button
+                    android:id="@+id/btnslt2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="317dp"
+                    tools:layout_editor_absoluteY="307dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#DA0303"
+                    android:layout_weight="2"
+                    android:text="Số vé hạng nhất"/>
+                <TextView
+                    android:id="@+id/t_price_air_hn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="giá hạng nhất"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnslg3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="197dp"
+                    tools:layout_editor_absoluteY="307dp"></Button>
+
+                <TextView
+                    android:id="@+id/textViewsl3"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="25dp"
+                    tools:layout_editor_absoluteX="237dp"
+                    tools:layout_editor_absoluteY="307dp" />
+
+                <Button
+                    android:id="@+id/btnslt3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="317dp"
+                    tools:layout_editor_absoluteY="307dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewSum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Tổng"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonOrderTicket"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:text="Đặt vé"
+        android:background="@drawable/btn_y"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

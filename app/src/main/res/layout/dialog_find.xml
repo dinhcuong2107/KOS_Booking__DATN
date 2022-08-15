@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_gravity="center"
+    android:layout_height="150dp"
+    android:background="@drawable/custom_frame1"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lọc đơn theo"
+        android:textColor="#E91E63"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="#E91E63"
+        android:text="khách hàng"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/editTextDiaSDT"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:ems="10"/>
+    <Button
+        android:id="@+id/buttonDiaFind"
+        android:layout_width="200dp"
+        android:background="@drawable/btn_y"
+        android:textAllCaps="false"
+        android:text="Lọc"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
